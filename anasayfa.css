@@ -1,0 +1,579 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    background-color: #f3f3f3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+}
+
+.menuList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuList li {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.menuList a {
+    position: relative;
+    padding: 1.5rem 0rem;
+    font: 550 .786rem "Gotham", "Montserrat", Helvetica, sans-serif;
+    color: #111114;
+}
+
+.subMenu {
+    width: 182px;
+    display: none;
+    top: 110%;
+    left: -12%;
+    background-color: #fff;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+}
+
+.subMenu::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #d6d6d6;
+    left: calc(50% - 10px);
+}
+
+.subMenu li {
+    border-bottom: 1px solid #e7e7e7;
+    margin: 0;
+}
+
+.subMenu a {
+    text-align: center;
+    color: #111114;
+    display: block;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    font: bold .786rem "Gotham", "Montserrat", Helvetica, sans-serif;
+}
+
+.subMenu a:hover {
+    color: #e0bc5d;
+    background: #f3f3f3;
+}
+
+#hoverItem .subMenu {
+    display: none;
+}
+
+#hoverItem:hover .subMenu {
+    display: block;
+    position: absolute;
+}
+
+.logo a::after {
+    content: "";
+    width: 120%;
+    height: 1.3rem;
+    display: block;
+    position: absolute;
+    top: 88%;
+    left: -9%;
+    background-color: #fff;
+    clip-path: polygon(0 0, 100% 0, 98.5% 100%, 1.5% 100%);
+}
+
+/* MAİN */
+
+/* SECTİON-1 */
+
+.hero {
+    min-height: 41.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #315436;
+    padding: 0 4rem;
+}
+
+.content h1 {
+    color: #e0bc5d;
+    font: 2.5rem/1.25 "Playfair Display",
+        "Times New Roman", serif;
+}
+
+.content p {
+    margin-bottom: 1.875rem;
+    color: #f1f1f3;
+    font: 500 .85rem/2 "Gotham", "Montserrat",
+        Helvetica, sans-serif;
+}
+
+.mybtn {
+    height: 2.625rem;
+    width: 8.75rem;
+    padding: .5rem;
+    font-family: .938rem/2 "Playfair Display",
+        "Times New Roman", serif;
+    ;
+    border-image-source: linear-gradient(to right,
+            #d1902f 0%, #e7c54d 12%, #f7e5a5 25%, #f6e3a1 29%,
+            #f4df94 33%, #f0d780 38%, #ebcd63 42%, #e7c54d 45%,
+            #e6c14b 61%, #e1b645 75%, #d9a43a 89%, #d1902f 100%);
+    border-image-slice: 1;
+    color: #e0bc5d;
+}
+
+.mybtn:hover {
+    background-image: linear-gradient(to bottom, #e0bc5d, #e0bc5d),
+        linear-gradient(to right, #d1902f 0%, #e7c54d 12%, #f7e5a5 25%,
+            #f6e3a1 29%, #f4df94 33%, #f0d780 38%, #ebcd63 42%, #e7c54d 45%,
+            #e6c14b 61%, #e1b645 75%, #d9a43a 89%, #d1902f 100%);
+    color: #fff;
+    border-radius: 2px;
+}
+
+.hero-image {
+    padding: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Section-2 */
+video {
+    width: 100%;
+    height: 100%;
+    margin-top: 1rem;
+}
+
+.videoDiv {
+    padding: 0 !important;
+}
+
+.textDiv {
+    padding: 2rem 2.5rem;
+}
+
+.textDiv h2 {
+    font: 1.5rem/1.33 "Playfair Display", "Times New Roman", serif;
+}
+
+.textDiv p {
+    font: 500 .87rem/2 "Gotham", "Montserrat", Helvetica, sans-serif;
+    color: #3e3e40;
+}
+
+/* Section-3 */
+
+#section-3 {
+    padding-top: 7.5rem;
+}
+
+.content2 {
+    min-height: 36.25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #e4e2dd 85%, #f3f3f3 15%);
+}
+
+.contentContain {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentContain h2 {
+    font: 2.5rem/1.25 "Playfair Display", "Times New Roman", serif;
+    color: #004723;
+}
+
+.contentContain h3 {
+    color: #3e3e40;
+    margin-bottom: 1.875rem;
+    font: 500 .938em/2.27 "Gotham", "Montserrat", Helvetica, sans-serif;
+}
+
+.contentContain p {
+    width: 20rem;
+    max-width: 100%;
+    color: #3e3e40;
+    margin-bottom: 2.5rem;
+    font: 400 .873rem/2 "Gotham", "Montserrat", Helvetica, sans-serif;
+}
+
+.contentContain a {
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    font-size: .9375rem;
+    color: #004723;
+}
+
+.contentContain a::after {
+    content: '';
+    display: block;
+    width: 4.6875rem;
+    height: 1px;
+    margin: .1875rem 0 0 1.25rem;
+    border: solid 1px #004723;
+}
+
+.move {
+    position: relative;
+    top: 100px;
+    left: -17%;
+}
+
+.move img {
+    width: 120%;
+    height: auto;
+}
+
+/* Section-4 */
+
+#article {
+    position: relative;
+    padding: 23.75rem 0 7.5rem;
+    background: linear-gradient(360deg, #fff 80%, transparent 20%);
+}
+
+.textbg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbg h2 {
+    width: 19.375rem;
+    max-width: 100%;
+    font: normal 1.5rem;
+    padding-bottom: 1.25rem;
+    color: #004723;
+}
+
+.textbg p {
+    width: 17.5rem;
+    max-width: 100%;
+    margin-right: 1.9rem;
+    font: normal .87rem/2 "Gotham", "Montserrat", Helvetica, sans-serif;
+    color: #3e3e40;
+}
+
+.textbg a {
+    color: #004723;
+    display: flex;
+    align-items: center;
+    font-size: .9375rem;
+    margin: 2rem 0;
+    padding-right: 7.5rem;
+}
+
+.textbg a::after {
+    content: '';
+    display: block;
+    width: 4.6875rem;
+    height: 1px;
+    margin: .1875rem 0 0 1.25rem;
+    border: solid 1px #004723;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#article-2 {
+    position: relative;
+    padding-bottom: 5rem;
+    background: linear-gradient(180deg, #fff 75%, #f3f3f3 25%);
+}
+
+.image2 {
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
+/* Section-5 */
+
+#section-5 {
+    padding: 7.5rem 0;
+}
+
+.content3 {
+    min-height: 36.25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #e4e2dd 85%, #f3f3f3 15%);
+    background-image: url(img/bgimg.webp);
+}
+
+.inner {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20%;
+}
+
+.inner h2 {
+    font: 2.3rem/1.25 "Playfair Display", "Times New Roman", serif;
+    color: #e0bc5d;
+    margin-bottom: 1.25rem;
+}
+
+.inner p {
+    width: 22.5rem;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+    font: 500 .87rem/2 "Gotham", "Montserrat", Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.inner a {
+    display: flex;
+    align-items: center;
+    font: .925rem/2 "Playfair Display", "Times New Roman", serif;
+    color: #f8f9fa;
+}
+
+.inner a::after {
+    content: '';
+    width: 4.6875rem;
+    height: 1px;
+    display: flex;
+    margin-left: 1.35rem;
+    margin-top: .1875rem;
+    border: solid 1px white;
+}
+
+.move-up {
+    position: relative;
+    top: 6.25rem;
+    left: -18%;
+}
+
+.move-up img {
+    width: 120%;
+    height: auto;
+}
+
+/* Section-6 */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #e4e2dd 60%, #f3f3f3 40%);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.sliderHead {
+    text-align: center;
+    padding: 3.125rem 0 0;
+    font: 1.5rem/1.33 "Playfair Display", "Times New Roman", serif;
+    color: #004723;
+    background-color: #e4e2dd;
+}
+
+.containSlider {
+    width: 18rem;
+    height: 28rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 4rem;
+    height: 4rem;
+    top: 32%;
+    border-radius: 50%;
+    border: 1px solid #7b907e;
+    color: #004723;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    border: none;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-weight: bold;
+    font-size: small;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    display: none;
+}
+
+.sliderButton {
+    width: 10rem;
+    display: block;
+    margin: auto;
+    padding: .375rem 1.438em;
+    border: 1px solid #004723;
+    font: .94rem/2 "Playfair Display", "Times New Roman", serif;
+    background-color: transparent;
+    color: #004723;
+}
+
+.sliderButton:hover {
+    background-color: #004723;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background: #3a3636;
+    margin-top: 5rem;
+}
+
+.footerTop {
+    border-bottom: 1px solid #4e4a4a;
+}
+
+.footerTop ul {
+    width: 25rem;
+    columns: 2;
+    margin-top: 2.5rem;
+    padding: 0;
+    font: 0.87rem/2 "Gotham", "Montserrat", Helvetica, sans-serif;
+}
+
+.footerTop li {
+    margin-bottom: 20px;
+}
+
+.footerTop a {
+    color: #fff;
+}
+
+.footerButton {
+    padding: .5rem 2.5rem;
+    margin: 3rem 0 1rem;
+    font-size: .7rem;
+    color: #68b631;
+    border: 1px solid #68b631;
+    background-color: #F0F0F0;
+    transition: .1s ease;
+}
+
+.footerButton:hover {
+    color: #fff;
+    background-color: #68b631;
+    transition: .2s;
+}
+
+.country {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.Turkey {
+    border: 1px solid #fff;
+}
+
+.footerBottom {
+    padding: 2.1875rem 0 1.5625rem;
+}
+
+.terms-links {
+    padding: 2.1875 0 1.5625rem;
+}
+
+.terms-links ul {
+    columns: 2;
+}
+
+.terms-links li {
+    text-align: left;
+    margin-right: 3.125rem;
+}
+
+.terms-links a {
+    font: normal .85rem "Gotham", "Montserrat", Helvetica, sans-serif;
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2.1875 0 1.5625rem;
+    font-size: .875rem;
+    color: #fff;
+}
+
+/* UNDERLİNE */
+
+.terms-links a:hover,
+.country:hover,
+.footerTop a:hover,
+.textbg a:hover,
+.inner a:hover {
+    text-decoration: underline;
+}
